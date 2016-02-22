@@ -1,0 +1,275 @@
+@prefix : <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended.owl#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended.owl> .
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended.owl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#controls
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#controls> rdf:type owl:ObjectProperty ;
+                                                                                 
+                                                                                 rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Agent> ;
+                                                                                 
+                                                                                 rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#hasGoal
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#hasGoal> rdf:type owl:ObjectProperty ;
+                                                                                
+                                                                                rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Plan> ;
+                                                                                
+                                                                                rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource> .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#inContextOf
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#inContextOf> rdf:type owl:ObjectProperty ;
+                                                                                    
+                                                                                    rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalObjectState> ;
+                                                                                    
+                                                                                    rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#instantiatedByActivity
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#instantiatedByActivity> rdf:type owl:ObjectProperty ;
+                                                                                               
+                                                                                               rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> ;
+                                                                                               
+                                                                                               rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#WorkflowActivity> .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#instantiatedByEntity
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#instantiatedByEntity> rdf:type owl:ObjectProperty ;
+                                                                                             
+                                                                                             rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource> ;
+                                                                                             
+                                                                                             rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#WorkflowEntity> ;
+                                                                                             
+                                                                                             rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#supervises
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#supervises> rdf:type owl:ObjectProperty ;
+                                                                                   
+                                                                                   rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Agent> ;
+                                                                                   
+                                                                                   rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#executedAt
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#executedAt> rdf:type owl:ObjectProperty ;
+                                                                                          
+                                                                                          rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalPremisses> ;
+                                                                                          
+                                                                                          rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Plan> .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasParameter
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasParameter> rdf:type owl:ObjectProperty ;
+                                                                                            
+                                                                                            rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Constraint> ;
+                                                                                            
+                                                                                            rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Parameter> .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasState
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasState> rdf:type owl:ObjectProperty ;
+                                                                                        
+                                                                                        rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalObject> ;
+                                                                                        
+                                                                                        rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalObjectState> .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#includes
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#includes> rdf:type owl:ObjectProperty ;
+                                                                                        
+                                                                                        rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Plan> ;
+                                                                                        
+                                                                                        rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isAssociatedWith
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isAssociatedWith> rdf:type owl:ObjectProperty ;
+                                                                                                
+                                                                                                rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Constraint> ;
+                                                                                                
+                                                                                                rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isOptionalResourceFor
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isOptionalResourceFor> rdf:type owl:ObjectProperty ;
+                                                                                                     
+                                                                                                     rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource> ;
+                                                                                                     
+                                                                                                     rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isRequiredResourceFor
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isRequiredResourceFor> rdf:type owl:ObjectProperty ;
+                                                                                                     
+                                                                                                     rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource> ;
+                                                                                                     
+                                                                                                     rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isResultOf
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isResultOf> rdf:type owl:ObjectProperty .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#restrics
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#restrics> rdf:type owl:ObjectProperty ;
+                                                                                        
+                                                                                        rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Constraint> ;
+                                                                                        
+                                                                                        rdfs:range <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource> .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasValue
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasValue> rdf:type owl:DatatypeProperty ;
+                                                                                        
+                                                                                        rdfs:domain <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Parameter> .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Agent
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Agent> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Constraint
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Constraint> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#HaccpStep
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#HaccpStep> rdf:type owl:Class ;
+                                                                                  
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Parameter
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Parameter> rdf:type owl:Class ;
+                                                                                  
+                                                                                  rdfs:subClassOf <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource> .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalObject
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalObject> rdf:type owl:Class ;
+                                                                                       
+                                                                                       rdfs:subClassOf <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource> .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalObjectState
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalObjectState> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalPremisses
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalPremisses> rdf:type owl:Class ;
+                                                                                          
+                                                                                          rdfs:subClassOf <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource> .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Plan
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Plan> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#WorkflowActivity
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#WorkflowActivity> rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#WorkflowEntity
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#WorkflowEntity> rdf:type owl:Class .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+
