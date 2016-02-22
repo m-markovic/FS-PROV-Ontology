@@ -1,0 +1,383 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE rdf:RDF [
+    <!ENTITY owl "http://www.w3.org/2002/07/owl#" >
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+    <!ENTITY FoodSafetyOntology "http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#" >
+]>
+
+
+<rdf:RDF xmlns="http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#"
+     xml:base="http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology"
+     xmlns:FoodSafetyOntology="http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example">
+        <owl:imports rdf:resource="http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#AmbientTemperature -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#AmbientTemperature">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Storage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#ChilledMeatStorageTemp -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#ChilledMeatStorageTemp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#HaccpTemperatureConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#CookedMeatCoreTemp -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#CookedMeatCoreTemp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#HaccpTemperatureConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Cooking -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Cooking">
+        <rdfs:subClassOf rdf:resource="&FoodSafetyOntology;HaccpStep"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Cooling -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Cooling">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Storage"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#CoreTemp -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#CoreTemp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#FSA_TemperatureThreshold -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#FSA_TemperatureThreshold">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#FSA_Threshold"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#FSA_Threshold -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#FSA_Threshold">
+        <rdfs:subClassOf rdf:resource="&FoodSafetyOntology;Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#FoodItem -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#FoodItem">
+        <rdfs:subClassOf rdf:resource="&FoodSafetyOntology;PhysicalObject"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#HaccpTemperatureConstraint -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#HaccpTemperatureConstraint">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#TemperatureConstraint"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Ingredient -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Ingredient">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#FoodItem"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#MinceBeef -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#MinceBeef">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Ingredient"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Preparation -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Preparation">
+        <rdfs:subClassOf rdf:resource="&FoodSafetyOntology;HaccpStep"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Storage -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Storage">
+        <rdfs:subClassOf rdf:resource="&FoodSafetyOntology;HaccpStep"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#SurfaceTemp -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#SurfaceTemp">
+        <rdfs:subClassOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Temperature"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Temperature -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Temperature">
+        <rdfs:subClassOf rdf:resource="&FoodSafetyOntology;Parameter"/>
+    </owl:Class>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#TemperatureConstraint -->
+
+    <owl:Class rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#TemperatureConstraint">
+        <rdfs:subClassOf rdf:resource="&FoodSafetyOntology;Constraint"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#HaccpTempConstraintChilledFood -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#HaccpTempConstraintChilledFood">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#ChilledMeatStorageTemp"/>
+        <restrics rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#chilledMeat"/>
+        <hasParameter rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#chilledStorageThreshold"/>
+        <isAssociatedWith rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooling"/>
+        <hasParameter rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatSurfaceTemp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#RyeAndSoda -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#RyeAndSoda">
+        <rdf:type rdf:resource="&FoodSafetyOntology;PhysicalPremisses"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#burger_preparation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#burger_preparation">
+        <rdf:type rdf:resource="&FoodSafetyOntology;Plan"/>
+        <executedAt rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#RyeAndSoda"/>
+        <includes rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooking"/>
+        <includes rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooling"/>
+        <includes rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#preparation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#chilled -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#chilled">
+        <rdf:type rdf:resource="&FoodSafetyOntology;PhysicalObjectState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#chilledMeat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#chilledMeat">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#MinceBeef"/>
+        <hasState rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#chilled"/>
+        <isResultOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooling"/>
+        <isOptionalResourceFor rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#preparation"/>
+        <hasState rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#raw"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#chilledStorageThreshold -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#chilledStorageThreshold">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#FSA_TemperatureThreshold"/>
+        <hasValue rdf:datatype="&xsd;integer">5</hasValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#constraint2 -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#constraint2">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#CookedMeatCoreTemp"/>
+        <restrics rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cookedMeat"/>
+        <isAssociatedWith rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooking"/>
+        <hasParameter rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatCoreTemp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooked -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooked">
+        <rdf:type rdf:resource="&FoodSafetyOntology;PhysicalObjectState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cookedMeat -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cookedMeat">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#MinceBeef"/>
+        <hasState rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooked"/>
+        <isResultOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooking -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooking">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Cooking"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooling -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooling">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Cooling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#coolingDown -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#coolingDown">
+        <rdf:type rdf:resource="&FoodSafetyOntology;PhysicalObjectState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#fridgeTemp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#fridgeTemp">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#SurfaceTemp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#heatingUp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#heatingUp">
+        <rdf:type rdf:resource="&FoodSafetyOntology;PhysicalObjectState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatCoreTemp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatCoreTemp">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#CoreTemp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatOutOfStorage -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatOutOfStorage">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#MinceBeef"/>
+        <isRequiredResourceFor rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooking"/>
+        <hasState rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#heatingUp"/>
+        <isResultOf rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#preparation"/>
+        <hasState rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#raw"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatSurfaceTemp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatSurfaceTemp">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#SurfaceTemp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatToStore -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#meatToStore">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#MinceBeef"/>
+        <isRequiredResourceFor rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#cooling"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#prepAreaTemp -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#prepAreaTemp">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#SurfaceTemp"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#preparation -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#preparation">
+        <rdf:type rdf:resource="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#Preparation"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#raw -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#raw">
+        <rdf:type rdf:resource="&FoodSafetyOntology;PhysicalObjectState"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://w3id.org/abdn/foodsafety/fs-prov_extended_example#ryeAndSoda -->
+
+    <owl:NamedIndividual rdf:about="https://w3id.org/abdn/foodsafety/fs-prov_extended_example#ryeAndSoda"/>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
