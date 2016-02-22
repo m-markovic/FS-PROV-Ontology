@@ -1,4 +1,4 @@
-@prefix : <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#> .
+@prefix : <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
