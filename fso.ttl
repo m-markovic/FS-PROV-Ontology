@@ -1,0 +1,275 @@
+@prefix : <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology> .
+
+<http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#controls
+
+:controls rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Agent ;
+          
+          rdfs:range :Step .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#executedAt
+
+:executedAt rdf:type owl:ObjectProperty ;
+            
+            rdfs:range :PhysicalPremisses ;
+            
+            rdfs:domain :Plan .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#hasGoal
+
+:hasGoal rdf:type owl:ObjectProperty ;
+         
+         rdfs:domain :Plan ;
+         
+         rdfs:range :Resource .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#hasParameter
+
+:hasParameter rdf:type owl:ObjectProperty ;
+              
+              rdfs:domain :Constraint ;
+              
+              rdfs:range :Parameter .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#hasState
+
+:hasState rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :PhysicalObject ;
+          
+          rdfs:range :PhysicalObjectState .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#inContextOf
+
+:inContextOf rdf:type owl:ObjectProperty ;
+             
+             rdfs:domain :PhysicalObjectState ;
+             
+             rdfs:range :Step .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#includes
+
+:includes rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Plan ;
+          
+          rdfs:range :Step .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#instantiatedByActivity
+
+:instantiatedByActivity rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:domain :Step ;
+                        
+                        rdfs:range :WorkflowActivity .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#instantiatedByEntity
+
+:instantiatedByEntity rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:domain :Resource ;
+                      
+                      rdfs:range :WorkflowEntity ;
+                      
+                      rdfs:subPropertyOf owl:topObjectProperty .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#isAssociatedWith
+
+:isAssociatedWith rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:domain :Constraint ;
+                  
+                  rdfs:range :Step .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#isOptionalResourceFor
+
+:isOptionalResourceFor rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:domain :Resource ;
+                       
+                       rdfs:range :Step .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#isRequiredResourceFor
+
+:isRequiredResourceFor rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:domain :Resource ;
+                       
+                       rdfs:range :Step .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#isResultOf
+
+:isResultOf rdf:type owl:ObjectProperty .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#restrics
+
+:restrics rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Constraint ;
+          
+          rdfs:range :Resource .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#supervises
+
+:supervises rdf:type owl:ObjectProperty ;
+            
+            rdfs:domain :Agent ;
+            
+            rdfs:range :Step .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#hasValue
+
+:hasValue rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :Parameter .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Agent
+
+:Agent rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Constraint
+
+:Constraint rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#HaccpStep
+
+:HaccpStep rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Step .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Parameter
+
+:Parameter rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Resource .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalObject
+
+:PhysicalObject rdf:type owl:Class ;
+                
+                rdfs:subClassOf :Resource .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalObjectState
+
+:PhysicalObjectState rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#PhysicalPremisses
+
+:PhysicalPremisses rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf :Resource .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Plan
+
+:Plan rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Resource
+
+:Resource rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#Step
+
+:Step rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#WorkflowActivity
+
+:WorkflowActivity rdf:type owl:Class .
+
+
+
+###  http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#WorkflowEntity
+
+:WorkflowEntity rdf:type owl:Class .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+
