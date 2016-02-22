@@ -1,0 +1,275 @@
+@prefix : <http://www.semanticweb.org/milan/ontologies/2016/1/FoodSafetyOntology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl> .
+
+<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl> rdf:type owl:Ontology .
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#controls
+
+:controls rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Agent ;
+          
+          rdfs:range :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#executedAt
+
+:executedAt rdf:type owl:ObjectProperty ;
+            
+            rdfs:range :PhysicalPremisses ;
+            
+            rdfs:domain :Plan .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasGoal
+
+:hasGoal rdf:type owl:ObjectProperty ;
+         
+         rdfs:domain :Plan ;
+         
+         rdfs:range :Resource .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasParameter
+
+:hasParameter rdf:type owl:ObjectProperty ;
+              
+              rdfs:domain :Constraint ;
+              
+              rdfs:range :Parameter .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasState
+
+:hasState rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :PhysicalObject ;
+          
+          rdfs:range :PhysicalObjectState .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#inContextOf
+
+:inContextOf rdf:type owl:ObjectProperty ;
+             
+             rdfs:domain :PhysicalObjectState ;
+             
+             rdfs:range :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#includes
+
+:includes rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Plan ;
+          
+          rdfs:range :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#instantiatedByActivity
+
+:instantiatedByActivity rdf:type owl:ObjectProperty ;
+                        
+                        rdfs:domain :Step ;
+                        
+                        rdfs:range :WorkflowActivity .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#instantiatedByEntity
+
+:instantiatedByEntity rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:subPropertyOf owl:topObjectProperty ;
+                      
+                      rdfs:domain :Resource ;
+                      
+                      rdfs:range :WorkflowEntity .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isAssociatedWith
+
+:isAssociatedWith rdf:type owl:ObjectProperty ;
+                  
+                  rdfs:domain :Constraint ;
+                  
+                  rdfs:range :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isOptionalResourceFor
+
+:isOptionalResourceFor rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:domain :Resource ;
+                       
+                       rdfs:range :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isRequiredResourceFor
+
+:isRequiredResourceFor rdf:type owl:ObjectProperty ;
+                       
+                       rdfs:domain :Resource ;
+                       
+                       rdfs:range :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#isResultOf
+
+:isResultOf rdf:type owl:ObjectProperty .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#restrics
+
+:restrics rdf:type owl:ObjectProperty ;
+          
+          rdfs:domain :Constraint ;
+          
+          rdfs:range :Resource .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#supervises
+
+:supervises rdf:type owl:ObjectProperty ;
+            
+            rdfs:domain :Agent ;
+            
+            rdfs:range :Step .
+
+
+
+
+
+#################################################################
+#
+#    Data properties
+#
+#################################################################
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#hasValue
+
+:hasValue rdf:type owl:DatatypeProperty ;
+          
+          rdfs:domain :Parameter .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#Agent
+
+:Agent rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#Constraint
+
+:Constraint rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#HaccpStep
+
+:HaccpStep rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Step .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#Parameter
+
+:Parameter rdf:type owl:Class ;
+           
+           rdfs:subClassOf :Resource .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#PhysicalObject
+
+:PhysicalObject rdf:type owl:Class ;
+                
+                rdfs:subClassOf :Resource .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#PhysicalObjectState
+
+:PhysicalObjectState rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#PhysicalPremisses
+
+:PhysicalPremisses rdf:type owl:Class ;
+                   
+                   rdfs:subClassOf :Resource .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#Plan
+
+:Plan rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#Resource
+
+:Resource rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#Step
+
+:Step rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#WorkflowActivity
+
+:WorkflowActivity rdf:type owl:Class .
+
+
+
+###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.ttl#WorkflowEntity
+
+:WorkflowEntity rdf:type owl:Class .
+
+
+
+
+###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
+
