@@ -1,0 +1,300 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended.owl">
+    <Prefix name="" IRI="https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso_extended.owl"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Prefix name="FoodSafetyOntology" IRI="https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.owl#"/>
+    <Import>https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.owl</Import>
+    <Declaration>
+        <Class IRI="#ChilledMeatStorageTemp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CookedMeatCoreTemp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cooking"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cooling"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#CoreTemp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FSA_TemperatureThreshold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FSA_Threshold"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#FoodItem"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Ingredient"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#MinceBeef"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Preparation"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#SurfaceTemp"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Temperature"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#TemperatureConstraint"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#CookedMeatThreshold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HaccpTempConstraintChilledFood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#HaccpTemperatureConstraintCookedFood"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#burgerCooking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chilledMeat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#chilledStorageThreshold"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cookedMeat"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cooking"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#cooling"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#meatCoreTemp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#meatOutOfStorage"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#meatSurfaceTemp"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#preparation"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#ChilledMeatStorageTemp"/>
+        <Class IRI="#TemperatureConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CookedMeatCoreTemp"/>
+        <Class IRI="#TemperatureConstraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cooking"/>
+        <Class abbreviatedIRI="FoodSafetyOntology:HaccpStep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cooling"/>
+        <Class abbreviatedIRI="FoodSafetyOntology:HaccpStep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#CoreTemp"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FSA_TemperatureThreshold"/>
+        <Class IRI="#FSA_Threshold"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FSA_Threshold"/>
+        <Class abbreviatedIRI="FoodSafetyOntology:Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#FoodItem"/>
+        <Class abbreviatedIRI="FoodSafetyOntology:PhysicalObject"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Ingredient"/>
+        <Class IRI="#FoodItem"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#MinceBeef"/>
+        <Class IRI="#Ingredient"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Preparation"/>
+        <Class abbreviatedIRI="FoodSafetyOntology:HaccpStep"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#SurfaceTemp"/>
+        <Class IRI="#Temperature"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Temperature"/>
+        <Class abbreviatedIRI="FoodSafetyOntology:Parameter"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#TemperatureConstraint"/>
+        <Class abbreviatedIRI="FoodSafetyOntology:HaccpConstraint"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#FSA_TemperatureThreshold"/>
+        <NamedIndividual IRI="#CookedMeatThreshold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#ChilledMeatStorageTemp"/>
+        <NamedIndividual IRI="#HaccpTempConstraintChilledFood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CookedMeatCoreTemp"/>
+        <NamedIndividual IRI="#HaccpTemperatureConstraintCookedFood"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="FoodSafetyOntology:Plan"/>
+        <NamedIndividual IRI="#burgerCooking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MinceBeef"/>
+        <NamedIndividual IRI="#chilledMeat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#FSA_TemperatureThreshold"/>
+        <NamedIndividual IRI="#chilledStorageThreshold"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MinceBeef"/>
+        <NamedIndividual IRI="#cookedMeat"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cooking"/>
+        <NamedIndividual IRI="#cooking"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cooling"/>
+        <NamedIndividual IRI="#cooling"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#CoreTemp"/>
+        <NamedIndividual IRI="#meatCoreTemp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#MinceBeef"/>
+        <NamedIndividual IRI="#meatOutOfStorage"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#SurfaceTemp"/>
+        <NamedIndividual IRI="#meatSurfaceTemp"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Preparation"/>
+        <NamedIndividual IRI="#preparation"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:hasParameter"/>
+        <NamedIndividual IRI="#HaccpTempConstraintChilledFood"/>
+        <NamedIndividual IRI="#meatSurfaceTemp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:hasParameter"/>
+        <NamedIndividual IRI="#HaccpTempConstraintChilledFood"/>
+        <NamedIndividual IRI="#chilledStorageThreshold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:restrics"/>
+        <NamedIndividual IRI="#HaccpTempConstraintChilledFood"/>
+        <NamedIndividual IRI="#chilledMeat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:hasParameter"/>
+        <NamedIndividual IRI="#HaccpTemperatureConstraintCookedFood"/>
+        <NamedIndividual IRI="#meatCoreTemp"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:hasParameter"/>
+        <NamedIndividual IRI="#HaccpTemperatureConstraintCookedFood"/>
+        <NamedIndividual IRI="#CookedMeatThreshold"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:restrics"/>
+        <NamedIndividual IRI="#HaccpTemperatureConstraintCookedFood"/>
+        <NamedIndividual IRI="#cookedMeat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:hasGoal"/>
+        <NamedIndividual IRI="#burgerCooking"/>
+        <NamedIndividual IRI="#cookedMeat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:isOptionalResourceFor"/>
+        <NamedIndividual IRI="#chilledMeat"/>
+        <NamedIndividual IRI="#preparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:isResultOf"/>
+        <NamedIndividual IRI="#chilledMeat"/>
+        <NamedIndividual IRI="#cooling"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:isResultOf"/>
+        <NamedIndividual IRI="#cookedMeat"/>
+        <NamedIndividual IRI="#cooking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:inContextOf"/>
+        <NamedIndividual IRI="#meatCoreTemp"/>
+        <NamedIndividual IRI="#cookedMeat"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:isRequiredResourceFor"/>
+        <NamedIndividual IRI="#meatOutOfStorage"/>
+        <NamedIndividual IRI="#cooking"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:isResultOf"/>
+        <NamedIndividual IRI="#meatOutOfStorage"/>
+        <NamedIndividual IRI="#preparation"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="FoodSafetyOntology:inContextOf"/>
+        <NamedIndividual IRI="#meatSurfaceTemp"/>
+        <NamedIndividual IRI="#chilledMeat"/>
+    </ObjectPropertyAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:value"/>
+        <IRI>#CookedMeatThreshold</IRI>
+        <Literal datatypeIRI="&xsd;integer">75</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdf:value"/>
+        <IRI>#chilledStorageThreshold</IRI>
+        <Literal datatypeIRI="&xsd;integer">5</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+

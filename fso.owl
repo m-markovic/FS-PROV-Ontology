@@ -1,0 +1,166 @@
+<?xml version="1.0"?>
+
+
+<!DOCTYPE Ontology [
+    <!ENTITY xsd "http://www.w3.org/2001/XMLSchema#" >
+    <!ENTITY xml "http://www.w3.org/XML/1998/namespace" >
+    <!ENTITY rdfs "http://www.w3.org/2000/01/rdf-schema#" >
+    <!ENTITY rdf "http://www.w3.org/1999/02/22-rdf-syntax-ns#" >
+]>
+
+
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.owl"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.owl">
+    <Prefix name="" IRI="https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso.owl#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Declaration>
+        <Class IRI="#Constraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HaccpConstraint"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#HaccpStep"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Parameter"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#PhysicalObject"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Plan"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Resource"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Step"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkflowActivity"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#WorkflowEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasGoal"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#hasParameter"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#inContextOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#instantiatedByActivity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#instantiatedByEntity"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isOptionalResourceFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isRequiredResourceFor"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#isResultOf"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#restrics"/>
+    </Declaration>
+    <SubClassOf>
+        <Class IRI="#HaccpConstraint"/>
+        <Class IRI="#Constraint"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#HaccpStep"/>
+        <Class IRI="#Step"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Parameter"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#PhysicalObject"/>
+        <Class IRI="#Resource"/>
+    </SubClassOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#instantiatedByEntity"/>
+        <ObjectProperty abbreviatedIRI="owl:topObjectProperty"/>
+    </SubObjectPropertyOf>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasGoal"/>
+        <Class IRI="#Plan"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#hasParameter"/>
+        <Class IRI="#Constraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#instantiatedByActivity"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#instantiatedByEntity"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isOptionalResourceFor"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#isRequiredResourceFor"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#restrics"/>
+        <Class IRI="#Constraint"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasGoal"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#hasParameter"/>
+        <Class IRI="#Parameter"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#inContextOf"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#instantiatedByActivity"/>
+        <Class IRI="#WorkflowActivity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#instantiatedByEntity"/>
+        <Class IRI="#WorkflowEntity"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isOptionalResourceFor"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#isRequiredResourceFor"/>
+        <Class IRI="#Step"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#restrics"/>
+        <Class IRI="#Resource"/>
+    </ObjectPropertyRange>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net -->
+
