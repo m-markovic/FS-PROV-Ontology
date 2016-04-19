@@ -167,11 +167,11 @@
 
 ###  https://w3id.org/abdn/foodsafety/fs-prov#Constraint
 
-:Constraint rdf:type owl:Class .
+:Constraint rdf:type owl:Class ;
 
         rdfs:comment """ 
         An fs-prov: Constraint identifies a logical statement that describes some restrictions on fs-prov:Resource in the context of an fs-prov:Step. 
-        """ ;
+        """ .
 
 
 
