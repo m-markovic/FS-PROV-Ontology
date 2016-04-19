@@ -1,12 +1,12 @@
-@prefix : <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#> .
+@prefix : <https://w3id.org/abdn/foodsafety/fs-prov#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso> .
+@base <https://w3id.org/abdn/foodsafety/fs-prov> .
 
-<https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso> rdf:type owl:Ontology .
+<https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology .
 
 
 #################################################################
@@ -16,7 +16,7 @@
 #################################################################
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#entity
+###  https://w3id.org/abdn/foodsafety/fs-prov#entity
 
 :entity rdf:type owl:ObjectProperty ;
         
@@ -26,7 +26,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#hasGoal
+###  https://w3id.org/abdn/foodsafety/fs-prov#hasGoal
 
 :hasGoal rdf:type owl:ObjectProperty ;
          
@@ -36,7 +36,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#hasParameter
+###  https://w3id.org/abdn/foodsafety/fs-prov#hasParameter
 
 :hasParameter rdf:type owl:ObjectProperty ;
               
@@ -46,7 +46,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#inContextOf
+###  https://w3id.org/abdn/foodsafety/fs-prov#inContextOf
 
 :inContextOf rdf:type owl:ObjectProperty ;
              
@@ -54,7 +54,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#instantiatedByActivity
+###  https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByActivity
 
 :instantiatedByActivity rdf:type owl:ObjectProperty ;
                         
@@ -64,7 +64,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#instantiatedByEntity
+###  https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByEntity
 
 :instantiatedByEntity rdf:type owl:ObjectProperty ;
                       
@@ -76,7 +76,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#isOptionalResourceFor
+###  https://w3id.org/abdn/foodsafety/fs-prov#isOptionalResourceFor
 
 :isOptionalResourceFor rdf:type owl:ObjectProperty ;
                        
@@ -86,7 +86,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#isRequiredResourceFor
+###  https://w3id.org/abdn/foodsafety/fs-prov#isRequiredResourceFor
 
 :isRequiredResourceFor rdf:type owl:ObjectProperty ;
                        
@@ -96,13 +96,13 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#isResultOf
+###  https://w3id.org/abdn/foodsafety/fs-prov#isResultOf
 
 :isResultOf rdf:type owl:ObjectProperty .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#restrics
+###  https://w3id.org/abdn/foodsafety/fs-prov#restrics
 
 :restrics rdf:type owl:ObjectProperty ;
           
@@ -121,13 +121,13 @@
 #################################################################
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Constraint
+###  https://w3id.org/abdn/foodsafety/fs-prov#Constraint
 
 :Constraint rdf:type owl:Class .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpConstraint
+###  https://w3id.org/abdn/foodsafety/fs-prov#HaccpConstraint
 
 :HaccpConstraint rdf:type owl:Class ;
                  
@@ -135,7 +135,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#HaccpStep
+###  https://w3id.org/abdn/foodsafety/fs-prov#HaccpStep
 
 :HaccpStep rdf:type owl:Class ;
            
@@ -143,7 +143,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Parameter
+###  https://w3id.org/abdn/foodsafety/fs-prov#Parameter
 
 :Parameter rdf:type owl:Class ;
            
@@ -151,7 +151,7 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#PhysicalObject
+###  https://w3id.org/abdn/foodsafety/fs-prov#PhysicalObject
 
 :PhysicalObject rdf:type owl:Class ;
                 
@@ -159,31 +159,31 @@
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Plan
+###  https://w3id.org/abdn/foodsafety/fs-prov#Plan
 
 :Plan rdf:type owl:Class .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Resource
+###  https://w3id.org/abdn/foodsafety/fs-prov#Resource
 
 :Resource rdf:type owl:Class .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#Step
+###  https://w3id.org/abdn/foodsafety/fs-prov#Step
 
 :Step rdf:type owl:Class .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#WorkflowActivity
+###  https://w3id.org/abdn/foodsafety/fs-prov#WorkflowActivity
 
 :WorkflowActivity rdf:type owl:Class .
 
 
 
-###  https://raw.githubusercontent.com/m-markovic/FS-PROV-Ontology/master/fso#WorkflowEntity
+###  https://w3id.org/abdn/foodsafety/fs-prov#WorkflowEntity
 
 :WorkflowEntity rdf:type owl:Class .
 
@@ -191,4 +191,3 @@
 
 
 ###  Generated by the OWL API (version 3.5.1) http://owlapi.sourceforge.net
-
