@@ -6,7 +6,11 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @base <https://w3id.org/abdn/foodsafety/fs-prov> .
 
-<https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology .
+<https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology ;
+
+rdfs:comment """ 
+        An ontology for describing provenance of HACCP-based workflows.
+        """ .
 
 
 #################################################################
