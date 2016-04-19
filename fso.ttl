@@ -9,7 +9,7 @@
 
 <https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology ;
 
-
+dc:describtion """Milan Markovic""";
 rdfs:label """ 
         An ontology for describing provenance of HACCP-based workflows.
         """ .
