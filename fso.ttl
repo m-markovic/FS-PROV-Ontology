@@ -14,12 +14,14 @@
 rdfs:label """ 
         FS-PROV Ontology.
         """ ;
-        dc:creator """ 
-        Milan Markovic
-        """ ;
+        
         
         dc:description """ 
         An ontology for describing provenance of HACCP-based workflows.
+        """ ;
+        
+        dc:creator """ 
+        Milan Markovic
         """ .
 
 
