@@ -180,13 +180,13 @@
 
 :HaccpConstraint rdf:type owl:Class ;
                  
-                 rdfs:subClassOf :Constraint .
+                 rdfs:subClassOf :Constraint ;
                  
                  rdfs:comment """ 
                 An fs-prov: HACCPConstraint identifies a logical statement that describes some restrictions on an 
                 fs-prov:Resource in the context of an fs-prov:HACCPStep. fs-prov: HACCPConstraint is typically defined 
                 in the context of maximum or minimum threshold values of some properties relating to an fs-prov:Resource
-                """ ;
+                """ .
 
 
 
@@ -194,12 +194,12 @@
 
 :HaccpStep rdf:type owl:Class ;
            
-           rdfs:subClassOf :Step .
+           rdfs:subClassOf :Step ;
            
            rdfs:comment """ 
            An fs-prov: HACCPStep denotes parts of a workflow plan which represent expected HACCP-regulated activities 
            that transform fs-prov: PhysicalObject(s).
-           """ ;
+           """ .
 
 
 
@@ -207,12 +207,12 @@
 
 :Parameter rdf:type owl:Class ;
            
-           rdfs:subClassOf :Resource .
+           rdfs:subClassOf :Resource ;
            
            rdfs:comment """ 
            An fs-prov: Parameter denotes parts of a workflow plan, which can be used by an fs-prov:Constraint 
            to determine variables of a restriction defined by fs-prov:Constraint. 
-           """ ;
+           """ .
 
 
 
@@ -220,64 +220,64 @@
 
 :PhysicalObject rdf:type owl:Class ;
                 
-                rdfs:subClassOf :Resource .
+                rdfs:subClassOf :Resource ;
                 
                 rdfs:comment """ 
                 An fs-prov: PhysicalObject represents a certain type of non-virtual entity that can be used or produced by an fs-prov:Step.
-                """ ;
+                """ .
 
 
 
 ###  https://w3id.org/abdn/foodsafety/fs-prov#Plan
 
-:Plan rdf:type owl:Class .
+:Plan rdf:type owl:Class ;
 
 rdfs:comment """ 
 An fs-prov:Plan is a specific type of p-plan:Plan. It is composed of fs-prov:Step(s), fs-prov:Resource(s) and fs-prov:Constraint(s). 
 Individual concept mentions are expected to represent a specific part of a single unique plan.  
 Hence, URI’s of these concepts are not to be reused in other plans or even within the same plan. 
-""" ;
+""" .
 
 
 
 ###  https://w3id.org/abdn/foodsafety/fs-prov#Resource
 
-:Resource rdf:type owl:Class .
+:Resource rdf:type owl:Class ;
 
 rdfs:comment """ 
 An fs-prov: Resource denotes parts of a workflow plan, which can be used by an 
 fs-prov:Step and fs-prov:Constraint or produced by an fs-prov:Step.  
-""" ;
+""" .
 
 
 
 ###  https://w3id.org/abdn/foodsafety/fs-prov#Step
 
-:Step rdf:type owl:Class .
+:Step rdf:type owl:Class ;
 
 rdfs:comment """ 
 An fs-prov: Step denotes parts of a workflow plan which represent expected activities that transform fs-prov: Resource(s).  
-""" ;
+""" .
 
 
 
 ###  https://w3id.org/abdn/foodsafety/fs-prov#WorkflowActivity
 
-:WorkflowActivity rdf:type owl:Class .
+:WorkflowActivity rdf:type owl:Class ;
 
 rdfs:comment """ 
 An fs-prov: WorkflowActivity is a subclass of prov:Activity and represents an instantiation of fs-prov:Step during a workflow execution.   
-""" ;
+""" .
 
 
 
 ###  https://w3id.org/abdn/foodsafety/fs-prov#WorkflowEntity
 
-:WorkflowEntity rdf:type owl:Class .
+:WorkflowEntity rdf:type owl:Class ;
 
 rdfs:comment """ 
 An fs-prov: WorkflowEntity is a subclass of prov:Entity and represents an instantiation of fs-prov:Resorce during a workflow execution.  
-""" ;
+""" .
 
 
 
