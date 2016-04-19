@@ -104,10 +104,12 @@
 ###  https://w3id.org/abdn/foodsafety/fs-prov#isOptionalResourceFor
 
 :isOptionalResourceFor rdf:type owl:ObjectProperty ;
+               
         rdfs:comment """ 
-        A property that links an fs-prov:Step to an fs-prov: Resource which could  be used by the instantiation of this step. 
+         A property that links an fs-prov:Step to an fs-prov: Resource which could  be used by the instantiation of this step. 
         """ ;
-                       
+           
+             
         rdfs:domain :Resource ;
                        
         rdfs:range :Step .
@@ -116,8 +118,8 @@
 
 ###  https://w3id.org/abdn/foodsafety/fs-prov#isRequiredResourceFor
 
-        :isRequiredResourceFor rdf:type owl:ObjectProperty ;
-        
+:isRequiredResourceFor rdf:type owl:ObjectProperty ;
+
         rdfs:comment """ 
         A property that links an fs-prov:Step to an fs-prov: Resource which has to be used by the instantiation of this step. 
         """ ;
