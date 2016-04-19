@@ -135,7 +135,7 @@
         A property that links an fs-prov:Step to its expected product described as fs-prov: Resource.  
         """ ;
 
-        :isResultOf rdf:type owl:ObjectProperty .
+        :isResultOf rdf:type owl:ObjectProperty ;
         
         rdfs:domain :Resource ;
                        
