@@ -9,7 +9,9 @@
 
 <https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology ;
 
-
+dc:description """ 
+        An ontology for describing provenance of HACCP-based workflows.
+        """ ;
         
 rdfs:label """ 
         FS-PROV Ontology.
