@@ -4,15 +4,14 @@
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@prefix dc:<http://purl.org/dc/terms/>.
-@prefix dc-elements:<http://purl.org/dc/elements/1.1/>.
+@prefix dc:<http://purl.org/dc/elements/1.1/>.
 @base <https://w3id.org/abdn/foodsafety/fs-prov> .
 
 <https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology ;
-dc-elements:creator """ 
-        Milan Markovic.
+dc:creator """ 
+        Milan Markovic
         """ 
-dc:description """ 
+rdfs:label """ 
         An ontology for describing provenance of HACCP-based workflows.
         """ .
 
