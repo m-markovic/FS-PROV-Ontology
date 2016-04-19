@@ -104,7 +104,6 @@
 ###  https://w3id.org/abdn/foodsafety/fs-prov#isOptionalResourceFor
 
 :isOptionalResourceFor rdf:type owl:ObjectProperty ;
-
         rdfs:comment """ 
         A property that links an fs-prov:Step to an fs-prov: Resource which could  be used by the instantiation of this step. 
         """ ;
