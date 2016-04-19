@@ -22,6 +22,11 @@
         
         rdfs:domain owl:Thing ;
         
+        rdfs:comment """ 
+        A relation that links the instantiation of some fs-prov:Resource to an sc-prov:EvaluationContext. 
+        The fs-prov:Resource should be restricted by an fs-prov:Constraint which is also linked to the same sc-prov:EvaluationContext
+        """ ;
+        
         rdfs:range :WorkflowEntity .
 
 
