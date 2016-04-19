@@ -132,11 +132,11 @@
 
 ###  https://w3id.org/abdn/foodsafety/fs-prov#isResultOf
 
-        rdfs:comment """ 
-        A property that links an fs-prov:Step to its expected product described as fs-prov: Resource.  
-        """ ;
-
         :isResultOf rdf:type owl:ObjectProperty ;
+        
+         rdfs:comment """ 
+        A property that links an fs-prov:Step to its expected product described as fs-prov: Resource. 
+        """ ;
         
         rdfs:domain :Resource ;
                        
