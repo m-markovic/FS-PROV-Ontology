@@ -7,6 +7,7 @@
 @prefix dc:<http://purl.org/dc/terms/>.
 @base <https://w3id.org/abdn/foodsafety/fs-prov> .
 @prefix dcterm: <http://purl.org/dc/terms/> .
+@prefix ns1: <http://web.resource.org/cc/> .
 
 <https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology ;
 
