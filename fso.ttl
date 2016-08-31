@@ -17,7 +17,7 @@ dc:creator "Peter Edwards"^^xsd:string ;
 dc:title "FS-PROV-O: An ontology for describing provenance of HACCP-based workflows" ;
 dc:rights "Copyright © 2016 University of Aberdeen" ;
 rdfs:isDefinedBy "" ;
-ns1:license <http://creativecommons.org/licenses/by-sa/3.0/>.
+ns1:license <http://creativecommons.org/licenses/by-sa/3.0/>;
 
         
 rdfs:label """ 
