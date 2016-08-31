@@ -6,18 +6,14 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix dc:<http://purl.org/dc/terms/>.
 @base <https://w3id.org/abdn/foodsafety/fs-prov> .
-
-
-                                           
-                                           
-                                           
-                                          
+@prefix dcterm: <http://purl.org/dc/terms/> .
 
 <https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology ;
 
 dcterm:created "01-02-2016"^^xsd:dateTime ;
 owl:versionInfo "1.0.0"^^xsd:string ;
 dcterm:creator "Milan Markovic"^^xsd:string ;
+dcterm:creator "Peter Edwards"^^xsd:string ;
 dcterm:title "FS-PROV-O: An ontology for describing provenance of HACCP-based workflows" ;
 dcterm:rights "Copyright © 2016 University of Aberdeen" ;
 rdfs:isDefinedBy "" ;
