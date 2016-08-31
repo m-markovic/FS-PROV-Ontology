@@ -7,7 +7,29 @@
 @prefix dc:<http://purl.org/dc/terms/>.
 @base <https://w3id.org/abdn/foodsafety/fs-prov> .
 
+
+                                           
+                                           
+                                           
+                                          
+
 <https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology ;
+
+dcterm:created "08-30-2015"^^xsd:dateTime ;
+                                           
+                                           owl:versionInfo "1.0.0"^^xsd:string ;
+                                           
+                                           dcterm:creator "Milan Markovic"^^xsd:string ;
+                                           
+                                           dcterm:creator "Peter Edwards"^^xsd:string ;
+                                           
+                                           dcterm:title "SC-PROV-O: An ontology for describing provenance of social computation" ;
+                                           
+                                           dcterm:rights "Copyright © 2016 University of Aberdeen" ;
+                                           
+                                           rdfs:isDefinedBy "" ;
+                                           
+                                           ns1:license <http://creativecommons.org/licenses/by-sa/3.0/> ;
 
         
 rdfs:label """ 
