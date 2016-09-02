@@ -13,7 +13,7 @@
 dc:created "01-02-2016"^^xsd:dateTime ;
 owl:versionInfo "1.0.0"^^xsd:string ;
 dc:creator "Milan Markovic"^^xsd:string ;
-dc:creator "Peter Edwards"^^xsd:string ;
+dc:contributor "Peter Edwards"^^xsd:string ;
 dc:title "FS-PROV-O: An ontology for describing provenance of HACCP-based workflows" ;
 dc:rights "Copyright © 2016 University of Aberdeen" ;
 rdfs:isDefinedBy "" ;
