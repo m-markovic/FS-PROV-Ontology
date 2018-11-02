@@ -10,7 +10,7 @@
 
 
 <https://w3id.org/abdn/foodsafety/fs-prov> rdf:type owl:Ontology ;
-dc:created "01-02-2016T13:15:30Z"^^xsd:dateTime ;
+dc:created "2016-02-01T21:32:52+00:00"^^xsd:dateTime ;
 owl:versionInfo "1.0.0"^^xsd:string ;
 dc:creator "Milan Markovic"^^xsd:string ;
 dc:creator "Peter Edwards"^^xsd:string ;
