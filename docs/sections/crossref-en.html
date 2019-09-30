@@ -1,0 +1,700 @@
+<html><h2 id="crossreference" class="list">Cross reference for  
+        FS-PROV Ontology.
+         classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by  
+        FS-PROV Ontology.
+        .
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#Constraint"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#Constraint">
+            <span>constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#HaccpConstraint"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#HaccpConstraint">
+            <span>haccp constraint</span>
+         </a>
+      </li>
+      <li>
+         <a href="#HaccpStep"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#HaccpStep">
+            <span>haccp step</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Parameter"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#Parameter">
+            <span>parameter</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PhysicalObject"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#PhysicalObject">
+            <span>physical object</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Plan" title="https://w3id.org/abdn/foodsafety/fs-prov#Plan">
+            <span>plan</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Resource"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">
+            <span>resource</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Step" title="https://w3id.org/abdn/foodsafety/fs-prov#Step">
+            <span>step</span>
+         </a>
+      </li>
+      <li>
+         <a href="#WorkflowActivity"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#WorkflowActivity">
+            <span>workflow activity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#WorkflowEntity"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#WorkflowEntity">
+            <span>workflow entity</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="Constraint">
+      <h3>constraint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#Constraint</p>
+      <div class="comment">
+         <span class="markdown"> 
+        An fs-prov: Constraint identifies a logical statement that describes some restrictions on fs-prov:Resource in the context of an fs-prov:Step. 
+        </span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#HaccpConstraint"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#HaccpConstraint">haccp constraint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasConstraintParameter"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#hasConstraintParameter">has constraint parameter</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#restrics"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#restrics">restrics</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HaccpConstraint">
+      <h3>haccp constraint<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#HaccpConstraint</p>
+      <div class="comment">
+         <span class="markdown"> 
+                An fs-prov: HACCPConstraint identifies a logical statement that describes some restrictions on an 
+                fs-prov:Resource in the context of an fs-prov:HACCPStep. fs-prov: HACCPConstraint is typically defined 
+                in the context of maximum or minimum threshold values of some properties relating to an fs-prov:Resource
+                </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Constraint"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#Constraint">constraint</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="HaccpStep">
+      <h3>haccp step<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#HaccpStep</p>
+      <div class="comment">
+         <span class="markdown"> 
+           An fs-prov: HACCPStep denotes parts of a workflow plan which represent expected HACCP-regulated activities 
+           that transform fs-prov: PhysicalObject(s).
+           </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Step" title="https://w3id.org/abdn/foodsafety/fs-prov#Step">step</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Parameter">
+      <h3>parameter<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#Parameter</p>
+      <div class="comment">
+         <span class="markdown"> 
+           An fs-prov: Parameter denotes parts of a workflow plan, which can be used by an fs-prov:Constraint 
+           to determine variables of a restriction defined by fs-prov:Constraint. 
+           </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Resource"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#inContextOf"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#inContextOf">in context of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasConstraintParameter"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#hasConstraintParameter">has constraint parameter</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PhysicalObject">
+      <h3>physical object<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#PhysicalObject</p>
+      <div class="comment">
+         <span class="markdown"> 
+                An fs-prov: PhysicalObject represents a certain type of non-virtual entity that can be used or produced by an fs-prov:Step.
+                </span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Resource"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">resource</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Plan">
+      <h3>plan<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#Plan</p>
+      <div class="comment">
+         <span class="markdown"> 
+An fs-prov:Plan is a specific type of p-plan:Plan. It is composed of fs-prov:Step(s), fs-prov:Resource(s) and fs-prov:Constraint(s). 
+Individual concept mentions are expected to represent a specific part of a single unique plan.  
+Hence, URI’s of these concepts are not to be reused in other plans or even within the same plan. 
+</span>
+      </div>
+      <dl class="description">
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#hasGoal" title="https://w3id.org/abdn/foodsafety/fs-prov#hasGoal">has goal</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Resource">
+      <h3>resource<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#Resource</p>
+      <div class="comment">
+         <span class="markdown"> 
+An fs-prov: Resource denotes parts of a workflow plan, which can be used by an 
+fs-prov:Step and fs-prov:Constraint or produced by an fs-prov:Step.  
+</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Parameter"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#Parameter">parameter</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PhysicalObject"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#PhysicalObject">physical object</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#instantiatedByEntity"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByEntity">instantiated by entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isOptionalResourceFor"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#isOptionalResourceFor">is optional resource for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isRequiredResourceFor"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#isRequiredResourceFor">is required resource for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isResultOf"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#isResultOf">is result of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#hasGoal" title="https://w3id.org/abdn/foodsafety/fs-prov#hasGoal">has goal</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#inContextOf"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#inContextOf">in context of</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#restrics"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#restrics">restrics</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Step">
+      <h3>step<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#Step</p>
+      <div class="comment">
+         <span class="markdown"> 
+An fs-prov: Step denotes parts of a workflow plan which represent expected activities that transform fs-prov: Resource(s).  
+</span>
+      </div>
+      <dl class="description">
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#HaccpStep"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#HaccpStep">haccp step</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is in domain of</dt>
+         <dd>
+            <a href="#instantiatedByActivity"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByActivity">instantiated by activity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#isOptionalResourceFor"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#isOptionalResourceFor">is optional resource for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isRequiredResourceFor"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#isRequiredResourceFor">is required resource for</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#isResultOf"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#isResultOf">is result of</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WorkflowActivity">
+      <h3>workflow activity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#WorkflowActivity</p>
+      <div class="comment">
+         <span class="markdown"> 
+An fs-prov: WorkflowActivity is a subclass of prov:Activity and represents an instantiation of fs-prov:Step during a workflow execution.   
+</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#instantiatedByActivity"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByActivity">instantiated by activity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="WorkflowEntity">
+      <h3>workflow entity<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#WorkflowEntity</p>
+      <div class="comment">
+         <span class="markdown"> 
+An fs-prov: WorkflowEntity is a subclass of prov:Entity and represents an instantiation of fs-prov:Resorce during a workflow execution.  
+</span>
+      </div>
+      <dl class="description">
+         <dt>is in range of</dt>
+         <dd>
+            <a href="#entity" title="https://w3id.org/abdn/foodsafety/fs-prov#entity">entity</a>
+            <sup class="type-op" title="object property">op</sup>, <a href="#instantiatedByEntity"
+               title="https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByEntity">instantiated by entity</a>
+            <sup class="type-op" title="object property">op</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="objectproperties">
+   <h3 id="properties" class="list">Object Properties</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#entity" title="https://w3id.org/abdn/foodsafety/fs-prov#entity">
+            <span>entity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasConstraintParameter"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#hasConstraintParameter">
+            <span>has constraint parameter</span>
+         </a>
+      </li>
+      <li>
+         <a href="#hasGoal" title="https://w3id.org/abdn/foodsafety/fs-prov#hasGoal">
+            <span>has goal</span>
+         </a>
+      </li>
+      <li>
+         <a href="#inContextOf"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#inContextOf">
+            <span>in context of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#instantiatedByActivity"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByActivity">
+            <span>instantiated by activity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#instantiatedByEntity"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByEntity">
+            <span>instantiated by entity</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isOptionalResourceFor"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#isOptionalResourceFor">
+            <span>is optional resource for</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isRequiredResourceFor"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#isRequiredResourceFor">
+            <span>is required resource for</span>
+         </a>
+      </li>
+      <li>
+         <a href="#isResultOf"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#isResultOf">
+            <span>is result of</span>
+         </a>
+      </li>
+      <li>
+         <a href="#restrics"
+            title="https://w3id.org/abdn/foodsafety/fs-prov#restrics">
+            <span>restrics</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="entity">
+      <h3>entity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#entity</p>
+      <div class="comment">
+         <span class="markdown"> 
+        A relation that links the instantiation of some fs-prov:Resource to an sc-prov:EvaluationContext. 
+        The fs-prov:Resource should be restricted by an fs-prov:Constraint which is also linked to the same sc-prov:EvaluationContext
+        </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <span class="dotted" title="http://www.w3.org/2002/07/owl#Thing">thing</span>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#WorkflowEntity"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#WorkflowEntity">workflow entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasConstraintParameter">
+      <h3>has constraint parameter<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#hasConstraintParameter</p>
+      <div class="comment">
+         <span class="markdown"> 
+        An fs-prov:hasConstraintParameter links instantiations of  fs-prov: Parameter as a source of parameter values  for an fs-prov:Constraint.
+        </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Constraint"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Constraint">constraint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Parameter"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Parameter">parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="hasGoal">
+      <h3>has goal<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#hasGoal</p>
+      <div class="comment">
+         <span class="markdown"> 
+         A relation that links an instance of a plan to the final expected product denoted as an fs-prov:Resource.
+         </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Plan" title="https://w3id.org/abdn/foodsafety/fs-prov#Plan">plan</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Resource"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="inContextOf">
+      <h3>in context of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#inContextOf</p>
+      <div class="comment">
+         <span class="markdown"> 
+        A property that defines which fs-prov:Resource is associated with a property described as an fs-prov:Parameter.
+        </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Parameter"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Parameter">parameter</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Resource"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instantiatedByActivity">
+      <h3>instantiated by activity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByActivity</p>
+      <div class="comment">
+         <span class="markdown"> 
+        A property that links an fs-prov:Step to its instantiation in  a workflow execution described by a prov:Activity. 
+        </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Step" title="https://w3id.org/abdn/foodsafety/fs-prov#Step">step</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#WorkflowActivity"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#WorkflowActivity">workflow activity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="instantiatedByEntity">
+      <h3>instantiated by entity<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#instantiatedByEntity</p>
+      <div class="comment">
+         <span class="markdown"> 
+        A property that links an fs-prov:Resource to its instantiation in  a workflow execution described by a prov:Entity. 
+        </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Resource"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#WorkflowEntity"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#WorkflowEntity">workflow entity</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isOptionalResourceFor">
+      <h3>is optional resource for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#isOptionalResourceFor</p>
+      <div class="comment">
+         <span class="markdown"> 
+         A property that links an fs-prov:Step to an fs-prov: Resource which could  be used by the instantiation of this step. 
+        </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Resource"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Step" title="https://w3id.org/abdn/foodsafety/fs-prov#Step">step</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isRequiredResourceFor">
+      <h3>is required resource for<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#isRequiredResourceFor</p>
+      <div class="comment">
+         <span class="markdown"> 
+        A property that links an fs-prov:Step to an fs-prov: Resource which has to be used by the instantiation of this step. 
+        </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Resource"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Step" title="https://w3id.org/abdn/foodsafety/fs-prov#Step">step</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="isResultOf">
+      <h3>is result of<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#isResultOf</p>
+      <div class="comment">
+         <span class="markdown"> 
+        A property that links an fs-prov:Step to its expected product described as fs-prov: Resource. 
+        </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Resource"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Step" title="https://w3id.org/abdn/foodsafety/fs-prov#Step">step</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+   <div class="entity" id="restrics">
+      <h3>restrics<sup class="type-op" title="object property">op</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#objectproperties">Object Property ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> https://w3id.org/abdn/foodsafety/fs-prov#restrics</p>
+      <div class="comment">
+         <span class="markdown"> 
+        A property that associates restrictions identified by an fs-prov:Constraint with a specific fs-prov:Resource. 
+        </span>
+      </div>
+      <div class="description">
+         <dl>
+            <dt>has domain</dt>
+            <dd>
+               <a href="#Constraint"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Constraint">constraint</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+            <dt>has range</dt>
+            <dd>
+               <a href="#Resource"
+                  title="https://w3id.org/abdn/foodsafety/fs-prov#Resource">resource</a>
+               <sup class="type-c" title="class">c</sup>
+            </dd>
+         </dl>
+      </div>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</html>
